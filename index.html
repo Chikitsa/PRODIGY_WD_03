@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+
+<div class="container" id="container">
+    
+    <div id="winning-message" class="winning-message">
+        
+        <div class="game-status" id="game-status"></div>
+        <!-- Display the winner (e.g., "Player X wins!") -->
+        <div class="winner" id="winner"></div>
+    </div>
+    <!-- Question: Play against computer or friend? -->
+    <div class="question" id="qsn1">
+        <div class="qsn-txt">Play Against?</div>
+        <!-- Buttons to select opponent type -->
+        <div class="btns">
+            <button class="btn-player" id="ai">Play with Computer</button>
+            <button class="btn-player" id="friend">Play with a Friend</button>
+        </div>       
+    </div>
+    <!-- Question: Who goes first? -->
+    <div class="question" id="qsn2">
+        <div class="qsn-txt">Who Goes First?</div>
+        <!-- Buttons to select starting player -->
+        <div class="btns">
+            <button class="btn-player" id="player1">Computer</button>
+            <button class="btn-player" id="player2">You</button>
+        </div>       
+    </div>
+    <!-- Game board -->
+    <div class="board" id="board">
+        <!-- Individual cells of the game board with click event handler -->
+        <div class="cell" id="0" onclick="makeMove(0);"></div>
+        <div class="cell" id="1" onclick="makeMove(1);"></div>
+        <div class="cell" id="2" onclick="makeMove(2);"></div>
+        <div class="cell" id="3" onclick="makeMove(3);"></div>
+        <div class="cell" id="4" onclick="makeMove(4);"></div>
+        <div class="cell" id="5" onclick="makeMove(5);"></div>
+        <div class="cell" id="6" onclick="makeMove(6);"></div>
+        <div class="cell" id="7" onclick="makeMove(7);"></div>
+        <div class="cell" id="8" onclick="makeMove(8);"></div>
+    </div>
+    <!-- Button to restart the game -->
+    <div class="btn-restart" id="restart">Restart</div>
+</div>
+
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
